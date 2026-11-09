@@ -1,9 +1,10 @@
 name: Release PR
 
-on:
-  issue_comment:
-    types: [created]
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   issue_comment:
+#     types: [created]
+# 
 concurrency:
   group: ${{ github.workflow }}-${{ github.run_id }}
   cancel-in-progress: true
